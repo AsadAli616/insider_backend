@@ -1,0 +1,4 @@
+SELECT * FROM e_comerce.order JOIN e_comerce.user ON 
+    e_comerce.user.id_user =  e_comerce.order.custumer_id 
+    JOIN e_comerce.orderdetail ON  e_comerce.order.orderid = e_comerce.orderdetail.orderrid 
+    JOIN e_comerce.product ON e_comerce.product.id_product = e_comerce.orderdetail.productid
